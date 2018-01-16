@@ -21,9 +21,31 @@ class SuedstadtLibraryTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testGetRelatedCards() {
+        SuedstadtService.shared.getRelatedCards("2", success: { cards in
+            XCTAssert(cards.count > 0)
+        }) { (error) in
+            XCTFail(error)
+        }
+    }
+    
+    func testGetStatementDates() {
+        SuedstadtService.shared.getStatementDates("2", success: { statementDates in
+            XCTAssert(statementDates.count > 0)
+            statementDates.forEach({
+                XCTAssert($0.statementDate.year > 1970, "Wrong date")
+            })
+        }) { (error) in
+            XCTFail(error)
+        }
+    }
+    
+    func testGetStatementSummary() {
+        SuedstadtService.shared.getStatementSummary("2", success: { summary in
+            XCTAssert(summary.responseBStmtInfo.count > 0)
+        }) { (error) in
+            XCTFail(error)
+        }
     }
     
     func testPerformanceExample() {

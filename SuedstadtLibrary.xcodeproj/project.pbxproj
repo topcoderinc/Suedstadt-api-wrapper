@@ -11,6 +11,12 @@
 		14C56C5E200E6E8C00A0D247 /* SuedstadtLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C56C54200E6E8B00A0D247 /* SuedstadtLibrary.framework */; };
 		14C56C63200E6E8C00A0D247 /* SuedstadtLibraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C56C62200E6E8C00A0D247 /* SuedstadtLibraryTests.swift */; };
 		14C56C65200E6E8C00A0D247 /* SuedstadtLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 14C56C57200E6E8B00A0D247 /* SuedstadtLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		14C56C72200E7C6300A0D247 /* SuedstadtService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C56C71200E7C6300A0D247 /* SuedstadtService.swift */; };
+		14C56C74200E88DC00A0D247 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C56C73200E88DC00A0D247 /* Card.swift */; };
+		14C56C76200E88E800A0D247 /* StatementDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C56C75200E88E800A0D247 /* StatementDate.swift */; };
+		14C56C79200E8FFB00A0D247 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C56C78200E8FFB00A0D247 /* Extensions.swift */; };
+		14C56C7B200EB08100A0D247 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C56C7A200EB08100A0D247 /* Transaction.swift */; };
+		14C56C7D200EB84000A0D247 /* StatementSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C56C7C200EB84000A0D247 /* StatementSummary.swift */; };
 		A3E5E56C1F8F30A1F880B137 /* Pods_SuedstadtLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EAD2B4313306E665AAE324E /* Pods_SuedstadtLibrary.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +39,12 @@
 		14C56C5D200E6E8C00A0D247 /* SuedstadtLibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuedstadtLibraryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14C56C62200E6E8C00A0D247 /* SuedstadtLibraryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuedstadtLibraryTests.swift; sourceTree = "<group>"; };
 		14C56C64200E6E8C00A0D247 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14C56C71200E7C6300A0D247 /* SuedstadtService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuedstadtService.swift; sourceTree = "<group>"; };
+		14C56C73200E88DC00A0D247 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		14C56C75200E88E800A0D247 /* StatementDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementDate.swift; sourceTree = "<group>"; };
+		14C56C78200E8FFB00A0D247 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		14C56C7A200EB08100A0D247 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		14C56C7C200EB84000A0D247 /* StatementSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementSummary.swift; sourceTree = "<group>"; };
 		1EAD2B4313306E665AAE324E /* Pods_SuedstadtLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuedstadtLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FA8DA9C69BF1DCEE2F5E857 /* Pods-SuedstadtLibrary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuedstadtLibrary.release.xcconfig"; path = "Pods/Target Support Files/Pods-SuedstadtLibrary/Pods-SuedstadtLibrary.release.xcconfig"; sourceTree = "<group>"; };
 		D4308E71810E93217AF4619B /* Pods-SuedstadtLibrary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuedstadtLibrary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SuedstadtLibrary/Pods-SuedstadtLibrary.debug.xcconfig"; sourceTree = "<group>"; };
@@ -83,8 +95,11 @@
 		14C56C56200E6E8B00A0D247 /* SuedstadtLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				14C56C70200E727200A0D247 /* Models */,
+				14C56C6F200E726A00A0D247 /* Services */,
 				14C56C57200E6E8B00A0D247 /* SuedstadtLibrary.h */,
 				14C56C58200E6E8C00A0D247 /* Info.plist */,
+				14C56C77200E8FCE00A0D247 /* Utils */,
 			);
 			path = SuedstadtLibrary;
 			sourceTree = "<group>";
@@ -96,6 +111,33 @@
 				14C56C64200E6E8C00A0D247 /* Info.plist */,
 			);
 			path = SuedstadtLibraryTests;
+			sourceTree = "<group>";
+		};
+		14C56C6F200E726A00A0D247 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				14C56C71200E7C6300A0D247 /* SuedstadtService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		14C56C70200E727200A0D247 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				14C56C73200E88DC00A0D247 /* Card.swift */,
+				14C56C75200E88E800A0D247 /* StatementDate.swift */,
+				14C56C7A200EB08100A0D247 /* Transaction.swift */,
+				14C56C7C200EB84000A0D247 /* StatementSummary.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		14C56C77200E8FCE00A0D247 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				14C56C78200E8FFB00A0D247 /* Extensions.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		26DE3BFD7B8487F248D751CE /* Pods */ = {
@@ -185,6 +227,7 @@
 				TargetAttributes = {
 					14C56C53200E6E8B00A0D247 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					14C56C5C200E6E8C00A0D247 = {
@@ -237,10 +280,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SuedstadtLibraryTests/Pods-SuedstadtLibraryTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -320,6 +365,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14C56C76200E88E800A0D247 /* StatementDate.swift in Sources */,
+				14C56C72200E7C6300A0D247 /* SuedstadtService.swift in Sources */,
+				14C56C74200E88DC00A0D247 /* Card.swift in Sources */,
+				14C56C79200E8FFB00A0D247 /* Extensions.swift in Sources */,
+				14C56C7D200EB84000A0D247 /* StatementSummary.swift in Sources */,
+				14C56C7B200EB08100A0D247 /* Transaction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,6 +510,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D4308E71810E93217AF4619B /* Pods-SuedstadtLibrary.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -471,6 +523,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.topcoder.SuedstadtLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -480,6 +533,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1FA8DA9C69BF1DCEE2F5E857 /* Pods-SuedstadtLibrary.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -501,6 +555,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DA16E9A5BBD9FC260E9323DF /* Pods-SuedstadtLibraryTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SuedstadtLibraryTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -515,6 +570,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0F7F06141CC528838DBDEF48 /* Pods-SuedstadtLibraryTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SuedstadtLibraryTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

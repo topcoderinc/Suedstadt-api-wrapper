@@ -10,6 +10,7 @@ target 'SuedstadtLibrary' do
 
   # Pods for SuedstadtLibrary
   pod 'Alamofire'
+  pod 'SwiftyJSON'
 
   target 'SuedstadtLibraryTests' do
     inherit! :search_paths
