@@ -9,10 +9,10 @@
 import Foundation
 import SwiftyJSON
 
-class StatementDate {
-    var fileNumber: Int
-    var statementDate: Date
-    var filler: String
+open class StatementDate {
+    open var fileNumber: Int
+    open var statementDate: Date
+    open var filler: String
     
     /// Initializer
     ///

@@ -9,85 +9,85 @@
 import Foundation
 import SwiftyJSON
 
-class Card {
-    let Org: Int
-    let Logo: Int
-    let responseAccountNumber: String
-    let responseCardNumber: String
-    let CardSequenceNumber: Int
-    let responseCustomerOrg: Int
-    let responseCustomerNumber: String
-    let responseRelationshipOrg: Int
-    let responseRelationshipNumber: String
-    let embosserName: String
-    let blockCode: String
-    let blockCode1: String
-    let blockCode2: String
-    let currentBalance: Double
-    let currentBalanceSign: String
-    let currencyCode: String
-    let cardCreditLimit: Double
-    let accountCreditLimit: Double
-    let expiryDate: Date
-    let cardToAddressIndicator: String
-    let billToAddressIndicator: String
-    let accountStatus: String
-    let delinquencyStatus: Int
-    let cardType: String
-    let accountOpenToBuy: Double
-    let accountOpenToBuySign: String
-    let staffIndicator: String
-    let blockCode1LastMaintainedDate: Date
-    let blockCode2LastMaintainedDate: Date
-    let blockCodeLastMaintainedDate: Date
-    let cardActivationIndicator: String
-    let memberSince: Int
-    let photoFlag: String
-    let familyPackIndicator: String
-    let cardStatus: String
-    let logoDescription: String
-    let acctOutstandingAuthAmt: Double
-    let acctOutstandingAuthAmtSign: String
-    let totalDisputedAmount: Double
-    let totalDisputedAmountSign: String
-    let annualIncome: Int
-    let annualIncomeSign: String
-    let cardCashLimit: Double
-    let cardCashLimitSign: String
-    let highestBlockCode: String
-    let highestReasonCode: String
-    let alopOutstandingAmount: Double
-    let alopOutstandingAmountSign: String
-    let statementFlag: String
-    let statementFlagMaintDate: Date
-    let lastPaymentDate: Date
-    let lastChequeBounceDate: Date
-    let behaviorScore: Int
-    let behaviorScoreSign: String
-    let cardArchivalFlag: String
-    let accountArchivalFlag: String
-    let relationshipArchivalFlag: String
-    let ipinStatus: String
-    let ipinGenerationDate: Date
-    let accountCashLimit: Double
-    let accountCashLimitSign: String
-    let combinedCreditLimitFlag: String
-    let creditLimitFlagCode: String
-    let cardLogo: Int
-    let cardOpenDate: Date
-    let endingBalOfLastStmt: Double
-    let endingBalOfLastStmtSign: String
-    let totalAmountDue: Double
-    let totalAmountDueSign: String
-    let paymentDueDate: Date
-    let nfcFlag: String
-    let nfcAssociatedCardNumber: String
-    let ppdKycIndicator: String
-    let logoCardType: String
-    let ppdSourceIndicator: String
-    let ppdUniqueId: Int
-    let priorCVC2: Int
-    let issueReason: String
+open class Card {
+    open let Org: Int
+    open let Logo: Int
+    open let responseAccountNumber: String
+    open let responseCardNumber: String
+    open let CardSequenceNumber: Int
+    open let responseCustomerOrg: Int
+    open let responseCustomerNumber: String
+    open let responseRelationshipOrg: Int
+    open let responseRelationshipNumber: String
+    open let embosserName: String
+    open let blockCode: String
+    open let blockCode1: String
+    open let blockCode2: String
+    open let currentBalance: Double
+    open let currentBalanceSign: String
+    open let currencyCode: String
+    open let cardCreditLimit: Double
+    open let accountCreditLimit: Double
+    open let expiryDate: Date
+    open let cardToAddressIndicator: String
+    open let billToAddressIndicator: String
+    open let accountStatus: String
+    open let delinquencyStatus: Int
+    open let cardType: String
+    open let accountOpenToBuy: Double
+    open let accountOpenToBuySign: String
+    open let staffIndicator: String
+    open let blockCode1LastMaintainedDate: Date
+    open let blockCode2LastMaintainedDate: Date
+    open let blockCodeLastMaintainedDate: Date
+    open let cardActivationIndicator: String
+    open let memberSince: Int
+    open let photoFlag: String
+    open let familyPackIndicator: String
+    open let cardStatus: String
+    open let logoDescription: String
+    open let acctOutstandingAuthAmt: Double
+    open let acctOutstandingAuthAmtSign: String
+    open let totalDisputedAmount: Double
+    open let totalDisputedAmountSign: String
+    open let annualIncome: Int
+    open let annualIncomeSign: String
+    open let cardCashLimit: Double
+    open let cardCashLimitSign: String
+    open let highestBlockCode: String
+    open let highestReasonCode: String
+    open let alopOutstandingAmount: Double
+    open let alopOutstandingAmountSign: String
+    open let statementFlag: String
+    open let statementFlagMaintDate: Date
+    open let lastPaymentDate: Date
+    open let lastChequeBounceDate: Date
+    open let behaviorScore: Int
+    open let behaviorScoreSign: String
+    open let cardArchivalFlag: String
+    open let accountArchivalFlag: String
+    open let relationshipArchivalFlag: String
+    open let ipinStatus: String
+    open let ipinGenerationDate: Date
+    open let accountCashLimit: Double
+    open let accountCashLimitSign: String
+    open let combinedCreditLimitFlag: String
+    open let creditLimitFlagCode: String
+    open let cardLogo: Int
+    open let cardOpenDate: Date
+    open let endingBalOfLastStmt: Double
+    open let endingBalOfLastStmtSign: String
+    open let totalAmountDue: Double
+    open let totalAmountDueSign: String
+    open let paymentDueDate: Date
+    open let nfcFlag: String
+    open let nfcAssociatedCardNumber: String
+    open let ppdKycIndicator: String
+    open let logoCardType: String
+    open let ppdSourceIndicator: String
+    open let ppdUniqueId: Int
+    open let priorCVC2: Int
+    open let issueReason: String
     
     /// Initializer
     init(Org: Int, Logo: Int, responseAccountNumber: String, responseCardNumber: String, CardSequenceNumber: Int, responseCustomerOrg: Int, responseCustomerNumber: String, responseRelationshipOrg: Int, responseRelationshipNumber: String, embosserName: String, blockCode: String, blockCode1: String, blockCode2: String, currentBalance: Double, currentBalanceSign: String, currencyCode: String, cardCreditLimit: Double, accountCreditLimit: Double, expiryDate: Date, cardToAddressIndicator: String, billToAddressIndicator: String, accountStatus: String, delinquencyStatus: Int, cardType: String, accountOpenToBuy: Double, accountOpenToBuySign: String, staffIndicator: String, blockCode1LastMaintainedDate: Date, blockCode2LastMaintainedDate: Date, blockCodeLastMaintainedDate: Date, cardActivationIndicator: String, memberSince: Int, photoFlag: String, familyPackIndicator: String, cardStatus: String, logoDescription: String, acctOutstandingAuthAmt: Double, acctOutstandingAuthAmtSign: String, totalDisputedAmount: Double, totalDisputedAmountSign: String, annualIncome: Int, annualIncomeSign: String, cardCashLimit: Double, cardCashLimitSign: String, highestBlockCode: String, highestReasonCode: String, alopOutstandingAmount: Double, alopOutstandingAmountSign: String, statementFlag: String, statementFlagMaintDate: Date, lastPaymentDate: Date, lastChequeBounceDate: Date, behaviorScore: Int, behaviorScoreSign: String, cardArchivalFlag: String, accountArchivalFlag: String, relationshipArchivalFlag: String, ipinStatus: String, ipinGenerationDate: Date, accountCashLimit: Double, accountCashLimitSign: String, combinedCreditLimitFlag: String, creditLimitFlagCode: String, cardLogo: Int, cardOpenDate: Date, endingBalOfLastStmt: Double, endingBalOfLastStmtSign: String, totalAmountDue: Double, totalAmountDueSign: String, paymentDueDate: Date, nfcFlag: String, nfcAssociatedCardNumber: String, ppdKycIndicator: String, logoCardType: String, ppdSourceIndicator: String, ppdUniqueId: Int, priorCVC2: Int, issueReason: String) {

@@ -9,68 +9,68 @@
 import Foundation
 import SwiftyJSON
 
-class Transaction {
-    let responseBOrigAcct: String
-    let responseBOrigName: String
-    let responseBTxnPostDte: Date
-    let responseBTxnDte: Date
-    let responseBTxnAmt: Double
-    let responseBTxnAmtSign: String
-    let responseBTxnCde: Int
-    let responseBRefNbr: Int
-    let responseBOrigRefNbr: String
-    let responseBMerchName: String
-    let responseBMerchCity: String
-    let responseBMerchCnty: String
-    let responseBMerchState: String
-    let responseBMerchCat: Int
-    let responseBOCurrAmt: Double
-    let responseBOCurrSign: String
-    let responseBOCurrCde: Int
-    let responseBOCurrDec: Int
-    let responseBTxnSetlInd: String
-    let responseBTxnSrceCde: String
-    let responseBTxnEntMode: String
-    let responseBTxnPymtSvc: String
-    let responseBTxnCurrDsc: String
-    let responseBTxnPlanNbr: Int
-    let responseBTxnPlanTyp: String
-    let responseBTxnAuthCode: String
-    let responseBTxnCardType: String
-    let responseBTxnDrCrInd: String
-    let responseBTxnPymtInd: String
-    let responseBTxnOrigDesc: String
-    let responseBTxnDisputFlg: String
-    let responseBTxnStmtDate: Date
-    let responseBTxnSeqNo: Int
-    let responseBFileName: String
-    let responseBFileNbr: Int
-    let responseBChipTxnFlag: String
-    let responseBTxnMerchOrg: Int
-    let responseBTxnMerchStore: Int
-    let responseBCitiChrgType: String
-    let responseBTxnMcCd: String
-    let responseBTxnMmcMstCd: String
-    let responseBTxnConvRate: Double
-    let responseBTxnConvRateSign: String
-    let responseBTxnAmtInInr: Double
-    let responseBTxnAmtInInrSign: String
-    let responseBTxnSource: Int
-    let responseBTxnChqNbr: String
-    let responseBSaleperson: String
-    let responseBTxnRwdPts: Double
-    let responseBTxnRwdPtsSign: String
-    let responseBEmiFlag: String
-    let responseBEppRespCode: Int
-    let responseBNfcFlag: String
-    let responseBAssocCardNbr: String
-    let responseBEppInd: String
-    let responseBTxnTime: Int
-    let responseBTxnBranchId: Int
-    let responseBTxnOperator: String
-    let responseBTxnCashierId: Int
-    let responseBTxnWsp: String
-    let responseBTxnDpDpan: String
+open class Transaction {
+    open let responseBOrigAcct: String
+    open let responseBOrigName: String
+    open let responseBTxnPostDte: Date
+    open let responseBTxnDte: Date
+    open let responseBTxnAmt: Double
+    open let responseBTxnAmtSign: String
+    open let responseBTxnCde: Int
+    open let responseBRefNbr: Int
+    open let responseBOrigRefNbr: String
+    open let responseBMerchName: String
+    open let responseBMerchCity: String
+    open let responseBMerchCnty: String
+    open let responseBMerchState: String
+    open let responseBMerchCat: Int
+    open let responseBOCurrAmt: Double
+    open let responseBOCurrSign: String
+    open let responseBOCurrCde: Int
+    open let responseBOCurrDec: Int
+    open let responseBTxnSetlInd: String
+    open let responseBTxnSrceCde: String
+    open let responseBTxnEntMode: String
+    open let responseBTxnPymtSvc: String
+    open let responseBTxnCurrDsc: String
+    open let responseBTxnPlanNbr: Int
+    open let responseBTxnPlanTyp: String
+    open let responseBTxnAuthCode: String
+    open let responseBTxnCardType: String
+    open let responseBTxnDrCrInd: String
+    open let responseBTxnPymtInd: String
+    open let responseBTxnOrigDesc: String
+    open let responseBTxnDisputFlg: String
+    open let responseBTxnStmtDate: Date
+    open let responseBTxnSeqNo: Int
+    open let responseBFileName: String
+    open let responseBFileNbr: Int
+    open let responseBChipTxnFlag: String
+    open let responseBTxnMerchOrg: Int
+    open let responseBTxnMerchStore: Int
+    open let responseBCitiChrgType: String
+    open let responseBTxnMcCd: String
+    open let responseBTxnMmcMstCd: String
+    open let responseBTxnConvRate: Double
+    open let responseBTxnConvRateSign: String
+    open let responseBTxnAmtInInr: Double
+    open let responseBTxnAmtInInrSign: String
+    open let responseBTxnSource: Int
+    open let responseBTxnChqNbr: String
+    open let responseBSaleperson: String
+    open let responseBTxnRwdPts: Double
+    open let responseBTxnRwdPtsSign: String
+    open let responseBEmiFlag: String
+    open let responseBEppRespCode: Int
+    open let responseBNfcFlag: String
+    open let responseBAssocCardNbr: String
+    open let responseBEppInd: String
+    open let responseBTxnTime: Int
+    open let responseBTxnBranchId: Int
+    open let responseBTxnOperator: String
+    open let responseBTxnCashierId: Int
+    open let responseBTxnWsp: String
+    open let responseBTxnDpDpan: String
     
     /// Initializer
     init(responseBOrigAcct: String, responseBOrigName: String, responseBTxnPostDte: Date, responseBTxnDte: Date, responseBTxnAmt: Double, responseBTxnAmtSign: String, responseBTxnCde: Int, responseBRefNbr: Int, responseBOrigRefNbr: String, responseBMerchName: String, responseBMerchCity: String, responseBMerchCnty: String, responseBMerchState: String, responseBMerchCat: Int, responseBOCurrAmt: Double, responseBOCurrSign: String, responseBOCurrCde: Int, responseBOCurrDec: Int, responseBTxnSetlInd: String, responseBTxnSrceCde: String, responseBTxnEntMode: String, responseBTxnPymtSvc: String, responseBTxnCurrDsc: String, responseBTxnPlanNbr: Int, responseBTxnPlanTyp: String, responseBTxnAuthCode: String, responseBTxnCardType: String, responseBTxnDrCrInd: String, responseBTxnPymtInd: String, responseBTxnOrigDesc: String, responseBTxnDisputFlg: String, responseBTxnStmtDate: Date, responseBTxnSeqNo: Int, responseBFileName: String, responseBFileNbr: Int, responseBChipTxnFlag: String, responseBTxnMerchOrg: Int, responseBTxnMerchStore: Int, responseBCitiChrgType: String, responseBTxnMcCd: String, responseBTxnMmcMstCd: String, responseBTxnConvRate: Double, responseBTxnConvRateSign: String, responseBTxnAmtInInr: Double, responseBTxnAmtInInrSign: String, responseBTxnSource: Int, responseBTxnChqNbr: String, responseBSaleperson: String, responseBTxnRwdPts: Double, responseBTxnRwdPtsSign: String, responseBEmiFlag: String, responseBEppRespCode: Int, responseBNfcFlag: String, responseBAssocCardNbr: String, responseBEppInd: String, responseBTxnTime: Int, responseBTxnBranchId: Int, responseBTxnOperator: String, responseBTxnCashierId: Int, responseBTxnWsp: String, responseBTxnDpDpan: String) {

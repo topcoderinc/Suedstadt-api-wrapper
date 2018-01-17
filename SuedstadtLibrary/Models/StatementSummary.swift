@@ -9,44 +9,44 @@
 import Foundation
 import SwiftyJSON
 
-class StatementSummary {
-    let responseBMessageId: Int
-    let responseBVersionNo: Int
-    let responseBTermId: String
-    let responseBUsrId: String
-    let responseBDateTime: Date
-    let responseBCode: Int
-    let responseBMoreIndicator: String
-    let responseBRespType: String
-    let responseBSeqNo: Int
-    let responseBEntries: Int
-    let responseBStmtInfo: [Transaction]
-    let responseBBillCurrCode: Int
-    let responseBTtlSales: Double
-    let responseBTtlSalesSign: String
-    let responseBTtlRetn: Double
-    let responseBTtlRetnSign: String
-    let responseBTtlPmt: Double
-    let responseBTtlPmtSign: String
-    let responseBTtlPmtRev: Double
-    let responseBTtlPmtRevSign: String
-    let responseBTtlDebit: Double
-    let responseBTtlDebitSign: String
-    let responseBTtlCredit: Double
-    let responseBTtlCreditSign: String
-    let responseBTtlCashAdv: Double
-    let responseBTtlCashAdvSign: String
-    let responseBTtlOthChg: Double
-    let responseBTtlOthChgSign: String
-    let responseBTtlAdjCrd: Double
-    let responseBTtlAdjCrdSign: String
-    let responseBTtlLtPymChg: Double
-    let responseBTtlLtPymChgSign: String
-    let responseBPurOthChgs: Double
-    let responseBPurOthChgsSign: String
-    let responseBPymOthCrdt: Double
-    let responseBPymOthCrdtSign: String
-    let responseBRwdExtErrCode: Int
+open class StatementSummary {
+    open let responseBMessageId: Int
+    open let responseBVersionNo: Int
+    open let responseBTermId: String
+    open let responseBUsrId: String
+    open let responseBDateTime: Date
+    open let responseBCode: Int
+    open let responseBMoreIndicator: String
+    open let responseBRespType: String
+    open let responseBSeqNo: Int
+    open let responseBEntries: Int
+    open let responseBStmtInfo: [Transaction]
+    open let responseBBillCurrCode: Int
+    open let responseBTtlSales: Double
+    open let responseBTtlSalesSign: String
+    open let responseBTtlRetn: Double
+    open let responseBTtlRetnSign: String
+    open let responseBTtlPmt: Double
+    open let responseBTtlPmtSign: String
+    open let responseBTtlPmtRev: Double
+    open let responseBTtlPmtRevSign: String
+    open let responseBTtlDebit: Double
+    open let responseBTtlDebitSign: String
+    open let responseBTtlCredit: Double
+    open let responseBTtlCreditSign: String
+    open let responseBTtlCashAdv: Double
+    open let responseBTtlCashAdvSign: String
+    open let responseBTtlOthChg: Double
+    open let responseBTtlOthChgSign: String
+    open let responseBTtlAdjCrd: Double
+    open let responseBTtlAdjCrdSign: String
+    open let responseBTtlLtPymChg: Double
+    open let responseBTtlLtPymChgSign: String
+    open let responseBPurOthChgs: Double
+    open let responseBPurOthChgsSign: String
+    open let responseBPymOthCrdt: Double
+    open let responseBPymOthCrdtSign: String
+    open let responseBRwdExtErrCode: Int
     
     /// Initializer
     init(responseBMessageId: Int, responseBVersionNo: Int, responseBTermId: String, responseBUsrId: String, responseBDateTime: Date, responseBCode: Int, responseBMoreIndicator: String, responseBRespType: String, responseBSeqNo: Int, responseBEntries: Int, responseBStmtInfo: [Transaction], responseBBillCurrCode: Int, responseBTtlSales: Double, responseBTtlSalesSign: String, responseBTtlRetn: Double, responseBTtlRetnSign: String, responseBTtlPmt: Double, responseBTtlPmtSign: String, responseBTtlPmtRev: Double, responseBTtlPmtRevSign: String, responseBTtlDebit: Double, responseBTtlDebitSign: String, responseBTtlCredit: Double, responseBTtlCreditSign: String, responseBTtlCashAdv: Double, responseBTtlCashAdvSign: String, responseBTtlOthChg: Double, responseBTtlOthChgSign: String, responseBTtlAdjCrd: Double, responseBTtlAdjCrdSign: String, responseBTtlLtPymChg: Double, responseBTtlLtPymChgSign: String, responseBPurOthChgs: Double, responseBPurOthChgsSign: String, responseBPymOthCrdt: Double, responseBPymOthCrdtSign: String, responseBRwdExtErrCode: Int) {
