@@ -10,16 +10,16 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 
-class SuedstadtService {
+open class SuedstadtService {
     
-    static let shared = SuedstadtService()
+    open static let shared = SuedstadtService()
     
     var baseUrl = "http://localhost:3030/api/v1"
     
     private init() {
     }
     
-    func getRelatedCards(_ customerNumber: String, success: @escaping ([Card])->(), failure: @escaping (String)->()) {
+    open func getRelatedCards(_ customerNumber: String, success: @escaping ([Card])->(), failure: @escaping (String)->()) {
         let url = baseUrl + "/card/cardinfo/relatedCardListInq"
         
         let parameters: Parameters = [
@@ -66,7 +66,7 @@ class SuedstadtService {
         }
     }
     
-    func getStatementDates(_ cardNumber: String, success: @escaping ([StatementDate])->(), failure: @escaping (String)->()) {
+    open func getStatementDates(_ cardNumber: String, success: @escaping ([StatementDate])->(), failure: @escaping (String)->()) {
         let url = baseUrl + "/card/cardinfo/statementDatesListInq"
         
         let headers: HTTPHeaders = [:]
@@ -103,7 +103,7 @@ class SuedstadtService {
         }
     }
     
-    func getStatementSummary(_ fileNumber: String, success: @escaping (StatementSummary)->(), failure: @escaping (String)->()) {
+    open func getStatementSummary(_ fileNumber: String, success: @escaping (StatementSummary)->(), failure: @escaping (String)->()) {
         let url = baseUrl + "/card/cardinfo/statementedTxnInq"
         
         let headers: HTTPHeaders = [:]

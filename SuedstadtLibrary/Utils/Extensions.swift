@@ -12,6 +12,10 @@ extension Double {
     var int: Int {
        return Int(self)
     }
+    
+    var date: Date {
+        return Date(timeIntervalSince1970: self / 1000)
+    }
 }
 
 extension DateFormatter {

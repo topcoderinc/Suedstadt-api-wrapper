@@ -9,10 +9,10 @@
 import Foundation
 import SwiftyJSON
 
-class StatementDate {
-    var fileNumber: Int
-    var statementDate: Date
-    var filler: String
+open class StatementDate {
+    open var fileNumber: Int
+    open var statementDate: Date
+    open var filler: String
     
     /// Initializer
     ///
@@ -32,7 +32,7 @@ class StatementDate {
     /// - Returns: the object
     class func fromJson(_ json: JSON) -> StatementDate {
         let fileNumber = json["responseFileNumber"].intValue
-        let statementDate = DateFormatter.iso.date(from: json["responseStatementDte"].stringValue) ?? Date(timeIntervalSince1970: 0)
+        let statementDate = json["responseStatementDte"].doubleValue.date
         let filler = json["responseFiller"].stringValue
         return StatementDate(fileNumber: fileNumber, statementDate: statementDate, filler: filler)
     }
