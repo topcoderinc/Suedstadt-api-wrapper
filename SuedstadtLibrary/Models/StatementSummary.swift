@@ -95,7 +95,7 @@ open class StatementSummary {
         let responseBVersionNo = json["responseBVersionNo"].intValue
         let responseBTermId = json["responseBTermId"].stringValue
         let responseBUsrId = json["responseBUsrId"].stringValue
-        let responseBDateTime = json["responseBDateTime"].stringValue.isoDate
+        let responseBDateTime = json["responseBDateTime"].doubleValue.date
         let responseBCode = json["responseBCode"].intValue
         let responseBMoreIndicator = json["responseBMoreIndicator"].stringValue
         let responseBRespType = json["responseBRespType"].stringValue

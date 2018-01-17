@@ -24,6 +24,9 @@ class SuedstadtLibraryTests: XCTestCase {
     func testGetRelatedCards() {
         SuedstadtService.shared.getRelatedCards("2", success: { cards in
             XCTAssert(cards.count > 0)
+            cards.forEach({
+                XCTAssert($0.expiryDate.year > 2000, "Wrong date")
+            })
         }) { (error) in
             XCTFail(error)
         }
@@ -33,16 +36,20 @@ class SuedstadtLibraryTests: XCTestCase {
         SuedstadtService.shared.getStatementDates("2", success: { statementDates in
             XCTAssert(statementDates.count > 0)
             statementDates.forEach({
-                XCTAssert($0.statementDate.year > 1970, "Wrong date")
+                XCTAssert($0.statementDate.year > 2000, "Wrong date")
             })
         }) { (error) in
             XCTFail(error)
         }
     }
-    
+
     func testGetStatementSummary() {
         SuedstadtService.shared.getStatementSummary("2", success: { summary in
+            XCTAssert(summary.responseBDateTime.year > 2000, "Wrong date")
             XCTAssert(summary.responseBStmtInfo.count > 0)
+            summary.responseBStmtInfo.forEach({
+                XCTAssert($0.responseBTxnDte.year > 2000, "Wrong date")
+            })
         }) { (error) in
             XCTFail(error)
         }

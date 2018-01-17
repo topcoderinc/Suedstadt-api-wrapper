@@ -141,8 +141,8 @@ open class Transaction {
     class func fromJson(_ json: JSON) -> Transaction {
         let responseBOrigAcct = json["responseBOrigAcct"].stringValue
         let responseBOrigName = json["responseBOrigName"].stringValue
-        let responseBTxnPostDte = json["responseBTxnPostDte"].stringValue.isoDate
-        let responseBTxnDte = json["responseBTxnDte"].stringValue.isoDate
+        let responseBTxnPostDte = json["responseBTxnPostDte"].doubleValue.date
+        let responseBTxnDte = json["responseBTxnDte"].doubleValue.date
         let responseBTxnAmt = json["responseBTxnAmt"].doubleValue
         let responseBTxnAmtSign = json["responseBTxnAmtSign"].stringValue
         let responseBTxnCde = json["responseBTxnCde"].intValue
@@ -170,7 +170,7 @@ open class Transaction {
         let responseBTxnPymtInd = json["responseBTxnPymtInd"].stringValue
         let responseBTxnOrigDesc = json["responseBTxnOrigDesc"].stringValue
         let responseBTxnDisputFlg = json["responseBTxnDisputFlg"].stringValue
-        let responseBTxnStmtDate = json["responseBTxnStmtDate"].stringValue.isoDate
+        let responseBTxnStmtDate = json["responseBTxnStmtDate"].doubleValue.date
         let responseBTxnSeqNo = json["responseBTxnSeqNo"].intValue
         let responseBFileName = json["responseBFileName"].stringValue
         let responseBFileNbr = json["responseBFileNbr"].intValue
