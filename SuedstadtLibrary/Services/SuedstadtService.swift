@@ -14,7 +14,7 @@ open class SuedstadtService {
     
     open static let shared = SuedstadtService()
     
-    var baseUrl = "http://localhost:3030/api/v1"
+    let baseUrl = Configuration.shared.baseUrl
     
     private init() {
     }
