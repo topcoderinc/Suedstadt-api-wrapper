@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		049529A40A0FB65ACF668886 /* Pods_SuedstadtLibraryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13BE209EEA912CA07D025CC1 /* Pods_SuedstadtLibraryTests.framework */; };
+		145AFFCE2010D09E004AF705 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145AFFCD2010D09E004AF705 /* Configuration.swift */; };
+		145AFFD12010D509004AF705 /* Configuration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 145AFFCF2010D259004AF705 /* Configuration.plist */; };
 		14C56C5E200E6E8C00A0D247 /* SuedstadtLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C56C54200E6E8B00A0D247 /* SuedstadtLibrary.framework */; };
 		14C56C63200E6E8C00A0D247 /* SuedstadtLibraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C56C62200E6E8C00A0D247 /* SuedstadtLibraryTests.swift */; };
 		14C56C65200E6E8C00A0D247 /* SuedstadtLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 14C56C57200E6E8B00A0D247 /* SuedstadtLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -33,6 +35,8 @@
 /* Begin PBXFileReference section */
 		0F7F06141CC528838DBDEF48 /* Pods-SuedstadtLibraryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuedstadtLibraryTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SuedstadtLibraryTests/Pods-SuedstadtLibraryTests.release.xcconfig"; sourceTree = "<group>"; };
 		13BE209EEA912CA07D025CC1 /* Pods_SuedstadtLibraryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuedstadtLibraryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		145AFFCD2010D09E004AF705 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		145AFFCF2010D259004AF705 /* Configuration.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Configuration.plist; sourceTree = "<group>"; };
 		14C56C54200E6E8B00A0D247 /* SuedstadtLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SuedstadtLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14C56C57200E6E8B00A0D247 /* SuedstadtLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuedstadtLibrary.h; sourceTree = "<group>"; };
 		14C56C58200E6E8C00A0D247 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -107,6 +111,7 @@
 		14C56C61200E6E8C00A0D247 /* SuedstadtLibraryTests */ = {
 			isa = PBXGroup;
 			children = (
+				145AFFCF2010D259004AF705 /* Configuration.plist */,
 				14C56C62200E6E8C00A0D247 /* SuedstadtLibraryTests.swift */,
 				14C56C64200E6E8C00A0D247 /* Info.plist */,
 			);
@@ -136,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				14C56C78200E8FFB00A0D247 /* Extensions.swift */,
+				145AFFCD2010D09E004AF705 /* Configuration.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -266,6 +272,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				145AFFD12010D509004AF705 /* Configuration.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,6 +374,7 @@
 			files = (
 				14C56C76200E88E800A0D247 /* StatementDate.swift in Sources */,
 				14C56C72200E7C6300A0D247 /* SuedstadtService.swift in Sources */,
+				145AFFCE2010D09E004AF705 /* Configuration.swift in Sources */,
 				14C56C74200E88DC00A0D247 /* Card.swift in Sources */,
 				14C56C79200E8FFB00A0D247 /* Extensions.swift in Sources */,
 				14C56C7D200EB84000A0D247 /* StatementSummary.swift in Sources */,

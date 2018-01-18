@@ -14,6 +14,8 @@ class SuedstadtLibraryTests: XCTestCase {
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        let bundle = Bundle(for: type(of: self))
+        Configuration.shared.loadConfig(bundle)
     }
     
     override func tearDown() {
@@ -22,37 +24,46 @@ class SuedstadtLibraryTests: XCTestCase {
     }
     
     func testGetRelatedCards() {
+        let expectation = XCTestExpectation()
         SuedstadtService.shared.getRelatedCards("2", success: { cards in
             XCTAssert(cards.count > 0)
             cards.forEach({
                 XCTAssert($0.expiryDate.year > 2000, "Wrong date")
             })
+            expectation.fulfill()
         }) { (error) in
             XCTFail(error)
         }
+        wait(for: [expectation], timeout: 5)
     }
     
     func testGetStatementDates() {
-        SuedstadtService.shared.getStatementDates("2", success: { statementDates in
+        let expectation = XCTestExpectation()
+        SuedstadtService.shared.getStatementDates("111120", success: { statementDates in
             XCTAssert(statementDates.count > 0)
             statementDates.forEach({
                 XCTAssert($0.statementDate.year > 2000, "Wrong date")
             })
+            expectation.fulfill()
         }) { (error) in
             XCTFail(error)
         }
+        wait(for: [expectation], timeout: 5)
     }
 
     func testGetStatementSummary() {
-        SuedstadtService.shared.getStatementSummary("2", success: { summary in
+        let expectation = XCTestExpectation()
+        SuedstadtService.shared.getStatementSummary("111120", success: { summary in
             XCTAssert(summary.responseBDateTime.year > 2000, "Wrong date")
             XCTAssert(summary.responseBStmtInfo.count > 0)
             summary.responseBStmtInfo.forEach({
                 XCTAssert($0.responseBTxnDte.year > 2000, "Wrong date")
             })
+            expectation.fulfill()
         }) { (error) in
             XCTFail(error)
         }
+        wait(for: [expectation], timeout: 5)
     }
     
     func testPerformanceExample() {
